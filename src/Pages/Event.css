@@ -1,0 +1,94 @@
+article#event{
+  /* width: 1390px; */
+  width: 100%;
+  padding-top: 140px;
+}
+
+
+article#event>h2{
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+
+div#eventwrap{
+  width: 87.05035971223022%;
+  /* width: 1210px; */
+  margin: 0 auto;
+}
+
+div#eventwrap>div{
+  width: 100%;
+  height: 270px;
+  margin-bottom: 20px;
+  position: relative;
+  color: #fff;
+  padding-top: 80px;
+}
+
+div#event1{
+  background: url(../../public/Images/event/event01.png) no-repeat center/cover;
+}
+div#event2{
+  background: url(../../public/Images/event/event02.png) no-repeat center/cover;
+}
+div#event3{
+  background: url(../../public/Images/event/event03.png) no-repeat center/cover;
+}
+
+div#eventwrap>div>dl{
+  width: 60%;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 0 auto;
+}
+
+div#eventwrap>div>dl>dt{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+div#eventwrap>div>dl>dd{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+div#eventwrap>div>dl>dd>a{
+  color: #fff;
+}
+
+@media screen and (min-width : 1390px){
+
+div#eventwrap{
+  width: 1210px;
+}
+
+}
+@media screen and (min-width : 980px) and (max-width : 1390px){
+  div#eventwrap>div>dl{
+    width: 80%;
+  }
+
+  
+
+}
+@media screen and (min-width : 580px) and (max-width : 980px){
+  div#eventwrap>div>dl{
+    width: 90%;
+  }
+  div#eventwrap>div>dl>dd{
+    font-size: 16px;
+  }
+  
+}
+@media screen and (min-width : 5px) and (max-width : 580px){
+  div#eventwrap>div>dl{
+    width: 100%;
+  }
+  div#eventwrap>div>dl>dd{
+    font-size: 16px;
+  }
+
+}

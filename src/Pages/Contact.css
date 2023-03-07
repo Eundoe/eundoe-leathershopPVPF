@@ -1,0 +1,317 @@
+article#contact{
+  /* width: 1390px; */
+  width: 100%;
+  padding-top: 140px;
+}
+
+article#contact>h2{
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+div#contactwrap{
+  /* width: 1210px; */
+  width: 87.05035971223022%;
+  margin: 0 auto;
+
+}
+
+div#contactinform{
+  padding: 40px 0;
+}
+
+p#mapon{
+  width: 81.81818181818182%;
+  height: 420px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+p#mapon>iframe{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div#myinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px dotted #000;
+  padding: 30px 0;
+}
+
+div#myinfo>dl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+div#myinfo>dl:nth-child(3){}
+
+div#myinfo>dl>dt{
+  border-right: 1px solid #000;
+}
+
+div#myinfo>dl>dd{
+  color: navy;
+}
+
+div#myinfo>dl dt,dd{
+  padding: 5px 10px;
+}
+
+div#contform{
+  border-radius: 5px;
+  padding: 60px 0;
+  background-color: #ffaa8b;
+  margin: 10px 0;
+}
+
+fieldset#formcontent{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+fieldset#formcontent>ul{
+  width: 45%;
+  margin: 0 10px;
+}
+
+fieldset#formcontent>div{
+  width: 45%;
+  margin: 0 10px;
+}
+
+fieldset#formcontent>ul>li{
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: end;
+}
+fieldset#formcontent>ul>li>label{
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+fieldset#formcontent>ul>li>input{
+  font-size: 18px;
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+div#message{
+  text-align: start;
+}
+div#message>label{
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+div#message>textarea{
+  resize: none;
+  width: 80%;
+  height: 100px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+div#message>button{
+  display: block;
+  width: 200px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+
+@media screen and (min-width:1390px){
+  div#contactwrap{
+    width: 1210px;
+  }
+
+
+
+}
+@media screen and (min-width:980px) and (max-width:1390px){}
+@media screen and (min-width:580px) and (max-width:980px){
+  div#contactwrap{
+    width: 90.81632653061224%;
+  }
+  p#mapon{
+    width: 95%;
+  }
+
+  div#myinfo>dl{
+    display: block;
+    margin: 0 0px;
+    font-size: 18px;
+    padding: 2px;
+    border-right: 1px solid #000;
+  }
+
+  div#myinfo>dl:nth-child(3){
+    border: none;
+  }
+
+  div#myinfo>dl>dt{
+    border-right: none;
+    border-bottom: 1px dotted pink;
+  }
+
+  div#contform{
+    padding: 150px 0;
+  }
+
+  fieldset#formcontent{
+    display: block;
+  }
+  fieldset#formcontent>ul{
+    width: 95%;
+    margin: 0 auto 15px;
+  }
+  fieldset#formcontent>ul>li{
+    margin-bottom: 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  fieldset#formcontent>ul>li>label{
+    width: 40%;
+    display: block;
+    margin: 0px;
+    border-right: 2px solid #000;
+  }
+  fieldset#formcontent>ul>li>input{
+    display: block;
+    width: 50%;
+    margin: 0 10px;
+  }
+
+  fieldset#formcontent>div{
+    width: 95%;
+    margin: 0 auto;
+  }
+  div#message{
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  div#message>label{
+    display: block;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  div#message>textarea{
+    display: block;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  div#message>button{
+    position: absolute;
+    bottom: -50px; right: 3%;
+  }
+
+
+}
+@media screen and (min-width:5px) and (max-width:580px){
+  div#contactwrap{
+    width: 98%;
+  }
+
+  p#mapon{
+    width: 84.4475721323012%;
+    height: 480px;
+  }
+  div#myinfo{
+    display: block;
+  }
+
+  div#myinfo>dl{
+    margin-bottom: 10px;
+  }
+
+  div#myinfo>dl>dt{
+    width: 48%;
+    text-align: center;
+    border-right: 1px solid #000;
+  }
+  div#contform{
+    padding: 160px 0;
+  }
+  
+  div#myinfo>dl>dd{
+    width: 48%;
+    color: navy;
+    text-align: center;
+  }
+  fieldset#formcontent{
+    display: block;
+  }
+
+  fieldset#formcontent>ul{
+    width: 84.4475721323012%;
+    margin: 0 auto;
+  }
+  fieldset#formcontent>div{
+    width: 84.4475721323012%;
+    margin: 0 auto;
+  }
+
+  fieldset#formcontent>ul>li{
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+  }
+
+  fieldset#formcontent>ul>li>label{
+    display: block;
+    margin: 0;
+    position: absolute;
+    left: 8px; top: 5px;
+  }
+
+  fieldset#formcontent>ul>li>input{
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  div#message{
+    text-align: start;
+    position: relative;
+  }
+  
+  div#message>label{
+    position: absolute;
+    left: 8px; top: 8px;
+  }
+  div#message>textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 3px;
+  }
+
+  div#message>button{
+    background-color: #000;
+    color: #fff;
+  }
+
+}

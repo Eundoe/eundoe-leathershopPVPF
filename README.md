@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# 조재호 포트폴리오(PF-2)
+## 소개
+> 가상클라이언트 B씨를 가정하여 만든 개인 포트폴리오 사이트입니다. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+## 배포링크
+> 배포방식은 AWS: S3의 간이 배포를 이용하였습니다.
 
-## Available Scripts
+> [바로가기](http://eundoe-leather.s3-website.ap-northeast-2.amazonaws.com/)
 
-In the project directory, you can run:
+---
+## 개발 도구 및 환경
+> 개발환경 : VScode, npm, React-native
 
-### `npm start`
+> 개발도구 : HTML, CSS, Javascript, jQuery, React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 프로젝트 설명
+### 프로젝트 계획서 
+> 추후정추가예정
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 헤더(Header) & 푸터(Footer)
+1. 헤더와 푸터를 별도 Component로 만들어서 작성했습니다.
+2. Cart를 Header에 추가하여 Modal Window로 띄우는 형식으로 만들었습니다. 
+3. Cart Data는 의도적으로 Redux를 이용하여 작성했습니다. Redux의 경우 Router이동시 초기화 되기 때문에 오더메이드와 섞이지 않게 하기 위해서입니다.
 
-### `npm test`
+### 메인페이지(Main.js)
+1. SPA구조로 진행하기 위해 React-Router를 이용하여 제작했습니다.
+2. Cart에 보낼 데이터를 구성하기 위해서 Redux를 이용한 방식을 채용했습니다. 이경우 Router이동시 초기화 됩니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 렌더링 페이지(App.js)
+1. Router로 받아올 props객체로서 Children을 받아오게합니다.
+2. 이경우 Main.js가 불러오는 위치이기 때문에 Header와 Footer Component는 Main.js로 귀속됩니다.
 
-### `npm run build`
+### 브랜드 페이지(About.js)
+1. 브랜드 스토리는 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 홈페이지(Home.js)
+1. 슬로건 슬라이드는 Swiper-api를 채용하여 사용했습니다. 
+2. Trendy제품은 기존 Json데이터에서 Trendy 타입의 데이터를 필터링해서 가져온 데이터로 jQuery 기능을 이용하여 Slide형 갤러리 기능을 구현했습니다.
+3. Trendy제품들은 클릭시 해당 제품의 이름과 바로 샵으로 이동가능한 부분을 만들어 두었습니다.
+4. 이벤트를 표기해서 바로 해당 이벤트로 갈수 있게 해두었습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 스토어 페이지(Shop.js)
+1. 스토어 페이지에서는 메인 정렬로서 각 제품의 타입별로 나눠두었습니다.
+2. 서브 정렬로서 가격비례로 오름차순 내림차순으로 정리할 수 있게 해두었습니다.
+3. 데이터 구조는 Json으로 Array함수를 이용하여 리스트를 작성하게 했습니다.
+4. pagination을 이용하여 메인 정렬 클릭시 변동을 바로 알 수 있게 했습니다.
+5. 각 제품 클릭시 Modal Window로 제품의 상세 내용에 대해서 나올 수 있게 하며 옵션 또한 Array함수를 이용한 옵션을 구현했습니다.
+6. 카트에 넣기 클릭시 설정한 수량과 제품옵션을 그대로 카트로 넣었으며 카트아이콘 클릭시 확인 가능합니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 오더메이드 페이지(Order.js)
+1. 오더메이드 페이지는 우선 Agreement를 통해서 오더메이드에서의 주의사항 및 규정을 표기하게했습니다. 
+2. 오더메이드 페이지에서 동의시 다음 페이지로 넘어갈 수 있는 버튼이 나타나게 했으며 클릭시 오더메이드 페이지로 스위칭 하게 했습니다.
+3. 오더메이드 페이지에서는 클릭시 연동되서 현재 상품의 색깔과 종류가 변동되게 해놨고 클릭할때 두번째 옵션란도 변동되게 해두었습니다.
+4. 오더메이드에서 각인시 추가되는 글자는 최대 6글자 그이상이 될경우 빨간글씨로 적을수 없다고 표기되게 합니다.
+5. 클릭시 최종가격과 제품사양이 실시간으로 변동되게 연동해두었습니다. 구매페이지 기능은 아직 준비중입니다.
 
-### `npm run eject`
+### 매거진 페이지(Magazine.js)
+1. 룩북 컨셉을 이용하여 작성자와 작성날짜를 Json으로 뿌려서 받게 해두었습니다. 
+2. 각 룩북을 클릭시 Modal Window로 상세 내용을 확인할 수 있습니다. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 이벤트 페이지(Event.js)
+* 이벤트 페이지는 간단하게 오더메이드를 중점적으로 미는 형식으로 구성했습니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 콘택트 페이지(Contact.js)
+1. 지도는 google map의 iframe을 채용했습니다.
+2. Conatact format은 일반적인 Form을 채용했습니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 에러페이지(ErrorPage.js)
+1. 현재 구현되지 않은 기능 또는 페이지에 대해서 Router로 연결해 두었습니다.
+2. 현재 페이지에서 다시 홈페이지로 돌아가게 만들었습니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+## 자기평가
+### 부족한 점
+1. Back-End 역량이 부족해서 구현 못한 페이지 들이 많은점이 아쉽습니다.
+2. 이번 페이지는 의도적으로 Redux를 이용한 Cart를 구현했지만 실무적으로는 UseState를 이용하는게 더 좋았을거라고 생각합니다.
+3. 아직 Data구조에 대해서 이해가 더 필요하다고 생각했습니다. 가능하면 검색기능에서 도움이 될 데이터 형태를 구현해보고 싶다고 생각했습니다.

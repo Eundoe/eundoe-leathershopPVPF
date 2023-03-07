@@ -1,0 +1,27 @@
+
+[{  
+    "name" : "wallet",
+    "price" : 100000,
+    "color" : ["reddish","brown","navy","black","olive"],
+    "option" : {
+      "kind" : ["gold","silver","anthic","nickel"],
+      "price" : [3000,2000,1500,4000]
+    }
+  },
+  {  "name" : "bag",
+    "price" : 200000,
+    "color" : ["red","brown","yellow","black","green"],
+    "option" : {
+      "kind" : ["golden","silver","anthic","rosegold"],
+      "price" : [2500,3000,2100,5000]
+    }
+  },
+ {"name" : "acc",
+  "price" : 10000,
+  "color" : [],
+  "option" : {
+    "kind" : ["case","coaster","sleeve","keyring"],
+    "price" : [5000,1000,4500,8000]
+  }
+}
+]
